@@ -5,14 +5,16 @@ html {
 	padding: 0;
 	overflow: auto;
 	scroll-behavior: smooth;
-	
 }
 body {
 	margin: 0 auto;
 	overflow: auto;
-	color: #555555;
+	color: #010406;
 	font-family: Courier New;
 	font-size: 20px;
+}
+#main {
+	min-width: 390px;
 }
 /************************* GENERAL *******************************/
 div {
@@ -84,7 +86,7 @@ ul {
 	background-color: #102539;
 	color: #8CCAF5;
 }
-#hamburger {/* hamburger menu --> desktop -> hidden */
+#hamburger, #title {/* hamburger menu --> desktop -> hidden */
   display: none;
 }
 /*************************** BODY **********************************/
@@ -119,11 +121,11 @@ ul {
 }
 #gal {
 	margin: 30px;
-	background-color: #4C7EA1;
+	background-color: #8CCAF5;
 	overflow: auto;
 }
 footer {
-	background-color: #8CCAF5;
+	background-color: #4C7EA1;
 	width: 100%;
 	overflow: auto;
 }
@@ -131,11 +133,9 @@ footer p {
 	float: right;
 	display: inline;
 	font-size: 14px;
-	margin: 5px 20px;
+	margin: 5px 1vw;
 }
-footer a:hover {
-	background-color: #102839;
-}
+
 /********************************************************************/
 /********************** Mobile phones *******************************/
 /********************************************************************/
@@ -161,6 +161,14 @@ footer a:hover {
 		font-size: 30px;
 		border: none;
     }
+    #title {
+		display: block;
+		position: relative;
+		margin: 0 50px;
+		padding: 0;
+		top: -5px;
+		float: right;
+    }
     #page-nav ul {
 		padding: 0;
 		margin-top: 10px;
@@ -175,7 +183,6 @@ footer a:hover {
 	/************************* BODY *********************************/
 	.anchor {
 		top: -70px;
-		
 	}
 	.local-anchor {
 		top: -70px;
