@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>http://www.stud.fit.vutbr.cz/~xsovam00/</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<!--                 SCRIPT for hamburger menu                     -->
+<script>
+document.addEventListener("click", function(event) {
+	var navbar = document.getElementById("navbar");
+	if (window.matchMedia("(max-width: 900px)").matches && !navbar.contains(event.target)) {
+		document.getElementById("menu").style.display = "none";
+	}
+});
+	
+function menuOnResize() {
+	if (!window.matchMedia("(max-width: 900px)").matches) {
+		document.getElementById("menu").style.display = "block";
+	}
+	else {
+	  document.getElementById("menu").style.display = "none";
+	}
+}
+function menuToggle() {
+	var menu = document.getElementById("menu");
+	if (menu.style.display !== "none") {
+		menu.style.display = "none";
+	}
+	else{
+		menu.style.display = "block";
+	}
+}
+
+function menuHide() {
+	if (window.matchMedia("(max-width: 900px)").matches) {
+		document.getElementById("menu").style.display = "none";
+	}
+}
+</script>
+<!--                      END SCRIPT                               -->
+  
+</head>
+<!--                        BODY                                   -->
+<body onresize="menuOnResize()" onload="menuOnResize()">
+<div id="main">
+	
+	<!--                 NAVBAR                                    -->
+	<div id="navbar">
+		<div>
+			<img alt="Obrázek není k dispozici" src="img/John_Wick_Keanu.jpeg">
+			<nav id="page-nav">
+				<button id="hamburger" onclick="menuToggle()">&#8801;</button>
+				<ul id="menu" onclick="menuHide()">
+					<li><button onclick="window.location.href='#about'">Postava</button></li>
+					<li><button onclick="window.location.href='#biography'">Biografie</button></li>
+					<li><button onclick="window.location.href='#gallery'">Galerie</button></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	
+	<!--                 BODY                                      -->
+	<header class="frame">
+		<div class="text">
+		<a class="anchor" id="about"></a>
+			<h1><a href="http://www.stud.fit.vutbr.cz/~xsovam00/">John Wick</a></h1>
+			<p>John Wick je hlavní postava stejnojmenného filmu John Wick (2014). Postava byla ztvárněna hercem Keanu Reevesem. John Wick, vlastním jménem Jardani Jovonovich, je bývalý nájemný vrah na odpočinku.</p>
+		</div>
+	</header>
+	
+	<div class="frame">	
+		<div class="text">
+		<a class="anchor" id="biography"></a>
+			<h2>Biografie</h2>
+			<div class="local-menu">
+				<ul>
+					<li><a href="#before">Před filmy</a></li>
+					<li><a href="#jw">John Wick</a></li>
+					<li><a href="#jw2">John Wick 2</a></li>
+					<li><a href="#jw3">John Wick 3</a></li>
+				</ul>
+			</div>
+			<a id="before" class="local-anchor"></a>
+			<h3>Před filmy</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a id="jw" class="local-anchor"></a>
+			<h3>John Wick</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a id="jw2" class="local-anchor"></a>
+			<h3>John Wick 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<a id="jw3" class="local-anchor"></a>
+			<h3>John Wick 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	
+	<div class="frame">
+		<div class="text">
+		<a class="anchor" id="gallery"></a>
+			<h2>Galerie</h2>
+			<div id="gal">
+				<img class="gallery" alt="Obrázek není k dispozici" src="img/jw.jpeg">
+				<img class="gallery" alt="Obrázek není k dispozici" src="img/jw2.jpeg">
+				<img class="gallery" alt="Obrázek není k dispozici" src="img/jw3.jpeg">
+				<img class="gallery" alt="Obrázek není k dispozici" src="img/jw4.jpg">
+				<img class="gallery" alt="Obrázek není k dispozici" src="img/jw5.jpg">
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<p>Email: <a href="mailto:xsovam00@stud.fit.vutbr.cz">xsovam00@stud.fit.vutbr.cz</a></p>
+		<p>Login: xsovam00</p>
+		<p>Autor: Michal Sova</p>
+	</footer>
+</div>
+</body>

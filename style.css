@@ -1,0 +1,213 @@
+/* ITW project 2 CSS */
+
+html {
+	margin: 0 auto;
+	padding: 0;
+	overflow: auto;
+	scroll-behavior: smooth;
+	
+}
+body {
+	margin: 0 auto;
+	overflow: auto;
+	color: #555555;
+	font-family: Courier New;
+	font-size: 20px;
+}
+/************************* GENERAL *******************************/
+div {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #102539;
+	
+}
+a:hover {
+	color: #8CCAF5;
+}
+h1, h2, h3 {
+	color: #102839;
+	margin-top: 5vh;
+	font-size: 50px;
+}
+h3 {
+	font-size: 30px;
+}
+h1 a {
+	color: inherit;
+}
+ul {
+	list-style: none;
+}
+
+/*************************** NAVBAR *********************************/
+#navbar {
+	width: 200px;
+	height: 100vh;
+	position: fixed;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	font-size: 35px;
+	font-family: Verdana;
+	background-color: #29516D;
+}
+
+#navbar img {
+	width: 100%;
+	margin: 0;	
+}
+#navbar ul {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#navbar li {
+	margin: 20px 0px;
+	padding: 5px 0px;
+	text-align: center;
+	width: 100%;
+	background-color: #8CCAF5;
+	color: #102539;
+}
+#navbar button {
+	width: 100%;
+	height: auto;
+	color: inherit;
+	border: none;
+	background-color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+#navbar li:hover {
+	background-color: #102539;
+	color: #8CCAF5;
+}
+#hamburger {/* hamburger menu --> desktop */
+  display: none;
+}
+/*************************** BODY **********************************/
+.anchor {
+    position: relative;
+    top: -30vh;
+    visibility: hidden;
+}
+.frame {
+	margin-left: 300px;
+	margin-top: 0px;
+	width: 100% - 350px;
+	display: flex;
+	align-items: center;
+}
+.text {
+	margin: 30vh 7vh;
+	min-height: 40vh;
+}
+.local-menu {
+	border: 2px solid #102839;
+	margin-bottom: 60vh;
+}
+#gallery {
+	top: -10vh;
+}
+.gallery {
+	height: 200px;
+	max-width: 500px;
+	float: left;
+	margin: 20px;
+}
+#gal {
+	margin: 30px;
+	background-color: #4C7EA1;
+	overflow: auto;
+}
+footer {
+	background-color: #8CCAF5;
+	width: 100%;
+	overflow: auto;
+}
+footer p {
+	float: right;
+	display: inline;
+	font-size: 14px;
+	margin: 5px 20px;
+}
+footer a:hover {
+	background-color: #102839;
+}
+/********************************************************************/
+/********************** Mobile phones *******************************/
+/********************************************************************/
+@media only screen and (max-width: 900px) {
+	/*********************** NAVBAR *********************************/
+	#navbar {
+		width: 100vw;
+		height: 50px;
+		margin: 0;
+		padding: 10px 20px;
+		top: 0;
+		display: unset;
+		font-size: 20px;
+	}
+	#navbar img {
+		display: none;
+	}
+	#hemburger { /* hamburger menu --> mobile phones*/
+		padding: 5px 20px;
+		display: inline-block;
+		color: #8CCAF5;
+		background: #102839;
+		font-size: 30px;
+		border: none;
+    }
+    #page-nav ul {
+		padding: 0;
+		margin-top: 10px;
+		margin-left: -20px;
+	}
+	#page-nav ul li {
+		display: block;
+		margin: 0;
+		padding: 10px 20px;
+	}
+	
+	/************************* BODY *********************************/
+	.anchor {
+		top: -70px;
+		
+	}
+	.local-anchor {
+		top: -70px;
+		position: relative;
+		visibility: hidden;
+	}
+	
+	.frame {
+		margin: 0;
+		width: 100%;
+	}
+	.text {
+		margin: 10vh 5vh;
+		min-height: auto;
+	}
+	header {
+		padding-top: 50px;
+	}
+	.local-menu {
+		margin-bottom: 5vh;
+	}
+	#gal {
+		margin: 20px 0px;
+		padding: 0px 20px;
+		width: 100% - 40px;
+	}
+	.gallery {
+		max-width: 900px;
+		height: auto;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
